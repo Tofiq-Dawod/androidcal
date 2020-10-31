@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="keywword" content="HTML,CSS,JavaScript">
+        <link rel="stylesheet" href="all_project.css">
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="Method.js"></script>
+        <script src="Query.js"></script>
+    </head>
+    <body>
+        <div>
+        <ul id="ulstyle">
+            <li id="listyle"><a id="hide" href="#RePl" onclick="Myfun()">RePlace</a></li>
+            <li id="listyle"><a href="#Sli" id="show">Slice</a></li>
+            <li id="listyle"><a href="#ind" id="show1">Indexof</a></li>
+            <li id="listyle"><a href="#spl" id="show2">Split</a></li>
+            <li id="listyle"><a href="#CCA" id="show3">CharCodeAt</a></li>
+            <li id="listyle"><a href="#CA" id="show4">CharAt</a></li>
+            <li id="listyle"><a href="#TR" id="show5">Trim</a></li>
+            <li id="listyle"><a href="#So" id="show6">Sorting</a></li>
+        </ul>
+        </div>
+        <div id="Di">
+            <h1>This WebSite your Mr. <span id="Nam">Person</span></h1>
+            <input type="text" id="inp" oninput="myrep()">
+        </div>
+        <div class="Hide" id="RePl">
+            <p>You Can Make WebSite own!</p>    
+            <button type="button" onclick="Myfunction()">RePlace</button>
+        </div>
+        <div class="Hide" id="Sli">
+            <h1><p>Choose the fruits that want</p></h1>
+            <span id="Nam1">1-Banana 2-Orange 3-Lemon 4-Apple 5-Mango</span><br><br><br>    
+            <label>From : </label><input type="number" id="inp1" oninput="Slice1()" max="5">
+            <label>To : </label><input type="number" id="inp2" oninput="Slice1()" max="5"><br><br><br>
+            <button type="button" onclick="Slice()">Slice</button>
+        </div>
+        <div class="Hide" id="Ind">
+            <p>Choose the character that want</p>
+            <h4>Number the character : <span id="Nam2"></span><br></h4>
+            <label>From</label><input type="text" id="inp3" oninput="ind()">
+            <label>To</label><input type="text" id="inp4" oninput="ind()">
+            <button type="button" onclick="myindof()">Index of</button>
+        </div>
+        <div  class="Hide" id="spl">
+            <h4>Number the character : <span id="Nam3"></span></h4>
+            <label>Click Split to Hash the sentence :</label><br>
+            <button type="button" onclick="myspl()">Split</button>
+        </div>
+        <div class="Hide" id="CCA">
+            <h4>unicode the character : <span id="Nam4"></span></h4>
+            <label>Click CharCodeAt to define unicode first character: </label><br>
+            <button type="button" onclick="myACC()">CharCodeAt</button>
+        </div>
+        <div class="Hide" id="CA">
+            <h4>First the character : <span id="Nam5"></span></h4>
+            <label>Click CharCodeAt to define first character: </label><br>
+            <button type="button" onclick="myCA()">CharAt</button>
+        </div>
+        <div class="Hide" id="TR">
+            <h4>sentence without spaces : <span id="Nam6"></span></h4>
+            <label>Click Trim to remove the speces </label><br>
+            <button type="button" onclick="Trim()">Trim</button>
+        </div>
+        <div class="Hide" id="So">
+            <h4>Type number : <span id="Nam7"></span></h4>
+            <label>Click Sorting to define if is number odd or even or other </label><br>
+            <input type="text" id="inp5" oninput="Sort()">
+            <button type="button" onclick="sorting()">sorting</button>
+        </div> 
+    </body>
+</html>
